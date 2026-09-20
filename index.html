@@ -124,6 +124,12 @@ section{padding:100px 20px}
 .clist li{display:flex;gap:13px;align-items:center;padding:12px 0;border-bottom:1px solid var(--border);font-size:13px;color:var(--mid)}
 .clist a{color:var(--dark);text-decoration:none;transition:color .2s}
 .clist a:hover{color:var(--gold)}
+.loc-cards{display:flex;flex-direction:column;gap:20px}
+.loc-card{border:1px solid var(--border);border-radius:2px;padding:32px;background:#fff}
+.loc-tag{display:inline-block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,169,110,.4);padding:4px 12px;border-radius:1px;margin-bottom:14px}
+.loc-card h4{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:400;margin-bottom:8px}
+.loc-addr{font-size:13px;color:var(--mid);margin-bottom:22px;line-height:1.6}
+.loc-btn{width:100%;text-align:center}
 .ci{color:var(--gold);width:18px;text-align:center;flex-shrink:0}
 .cal{background:#fff;border:1px solid var(--border);border-radius:4px;overflow:hidden}
 
@@ -279,15 +285,15 @@ footer{background:var(--dark);padding:60px 20px 40px;text-align:center}
 <section id="book">
   <div class="ct">
     <span class="sl reveal">Appointments</span>
-    <h2 class="st reveal">Book Your Consultation</h2>
-    <p class="ss reveal">Limited appointments available in West Midlands. Zunaira personally confirms every booking within 4 hours.</p>
+    <h2 class="st reveal">Book Your Appointment</h2>
+    <p class="ss reveal">Two studios across the UK — Birmingham and London. Choose your location and book directly online.</p>
     <div class="bgrid">
       <div class="rl">
         <div class="bi">
           <h3>Get in Touch</h3>
-          <p>Book online via the calendar, or reach out on WhatsApp. Every enquiry is handled personally — no bots, no wait times.</p>
+          <p>Book online via the links, or reach out on WhatsApp. Every enquiry is handled personally — no bots, no wait times.</p>
           <ul class="clist">
-            <li><span class="ci">📍</span>West Midlands, Birmingham, UK</li>
+            <li><span class="ci">📍</span>Birmingham &amp; London, UK</li>
             <li><span class="ci">📱</span><a href="https://wa.me/447448941120" target="_blank" onclick="fbq('track','Contact')">+44 7448 941120 (WhatsApp)</a></li>
             <li><span class="ci">📧</span><a href="mailto:info@pictureperfectbyzunaira.co.uk">info@pictureperfectbyzunaira.co.uk</a></li>
             <li><span class="ci">📸</span><a href="https://instagram.com/pictureperfectbyzunairauk" target="_blank">@pictureperfectbyzunairauk</a></li>
@@ -296,8 +302,21 @@ footer{background:var(--dark);padding:60px 20px 40px;text-align:center}
           </ul>
         </div>
       </div>
-      <div class="cal rr">
-        <iframe src="https://calendly.com/zunairaovais/zunaira-s-calendar" width="100%" height="600" frameborder="0"></iframe>
+      <div class="rr">
+        <div class="loc-cards">
+          <div class="loc-card">
+            <span class="loc-tag">Home Studio</span>
+            <h4>Birmingham</h4>
+            <p class="loc-addr">Melville Road, Birmingham, West Midlands</p>
+            <a href="https://www.fresha.com/a/picture-perfect-by-zunaira-birmingham-melville-road-rvllg2iy" class="bg loc-btn" target="_blank" rel="noopener" onclick="fbq('track','Schedule')">Book Birmingham</a>
+          </div>
+          <div class="loc-card">
+            <span class="loc-tag">Studio</span>
+            <h4>London</h4>
+            <p class="loc-addr">19 Great Cumberland Place, London</p>
+            <a href="https://www.fresha.com/a/picture-perfect-uk-london-19-great-cumberland-place-b3poqaeo" class="bg loc-btn" target="_blank" rel="noopener" onclick="fbq('track','Schedule')">Book London</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
